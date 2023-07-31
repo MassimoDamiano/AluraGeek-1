@@ -55,7 +55,8 @@ header{
 /* Section Hero*/
 
 #hero{
-    background-image: url(./img/banner-image.png);
+    background-image: url(
+        ../img/banner-image.png);
     background-repeat: no-repeat;
     height: 50vh;
     width: 100%;
