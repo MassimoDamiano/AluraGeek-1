@@ -47,9 +47,13 @@ header{
 .btn-login{
     padding: 13px 50px;
     background-color: #fff;
-    border: 1px solid  rgb(55, 104, 205);
+    border: 1px solid  rgb(101, 121, 161);
     color:  rgb(93, 144, 245);
+    font-weight: 600;
     
+}
+.btn-login:hover{
+    background-color:rgb(166, 184, 221);;
 }
 
 /* Section Hero*/
@@ -83,7 +87,14 @@ header{
     background-color:  rgb(78, 129, 231);
     border: none;
 }
+.btn-hero a{
+    color: #FFF;
+}
 
+.btn-hero:hover{
+    transition-duration:0.5s ;
+    transform: scale(1.1);
+}
 /*Productos*/
 .cajas-productos{
    width: 100%;
@@ -94,7 +105,7 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
-    width: 106%;
+    width: 104%;
 }
  .btn-todo{
     background-color: #fff;
@@ -107,11 +118,14 @@ header{
     font-weight: 600;
     color: #464646;
     font-size: 1.8rem;
+    margin-top: 50px;
     
 }
 .caja-btn {
     display: flex;
     align-items: center;
+    margin-top: 50px;
+
     
 }
 
@@ -174,15 +188,15 @@ header{
 
 }
 .nombre-span{
-    font-size: 10px;
+    font-size: 13px;
     color: #464646;
     padding-bottom: -2px;
     background-color: #fff;
-    padding-left: 5px;
+    padding-left: 8px;
     margin-top: 15px;
     padding-bottom: 3px;
     border-top-left-radius: 5px;
-    padding-top: 3px;
+    padding-top: 8px;
 }
 
 

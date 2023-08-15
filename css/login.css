@@ -84,7 +84,11 @@ form{
     
 }
 
-
+.btn-login a{
+    color: #fff;
+    font-size: 15px;
+    
+}
 
 
 /*FOOTER*/
