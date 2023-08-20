@@ -76,6 +76,10 @@ header{
      border: none;
      
  }
+ .btn-agregar:hover{
+    transition-duration:0.5s ;
+    transform: scale(1.1);
+ }
  .btn-agregar a{
     color: #fff;
  }

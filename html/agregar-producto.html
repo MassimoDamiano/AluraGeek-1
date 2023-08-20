@@ -9,29 +9,103 @@
 <body>
     <header>
         <div class="izquierda">
-            <a href="/index.html"><img src="./img/Logo.png" alt="Logo"></a>
+            <a href="/html/index.html"><img src="/img/Logo.png" alt="Logo"></a>
 
             <input type="text"  placeholder="¿Que deseas buscar"  class="buscador" id="buscardor" name="buscardor">
-            <img src="./img/Icone.png" class="icono" alt="">
+            <img src="/img/Icone.png" class="icono" alt="">
             
         </div>
-        <a href="./login.html" class="btn-l"> <button class="btn-login">Login</button></a>
+        <a href="./login.html" class="btn-l"> <button class="btn-admin">Menu 
+            administrador
+        </button></a>
 
 
     </header>
     <div class="container">
-        <h1>Agregar nuevo Producto</h1>
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <textarea 
-        name="desc" 
-        id="desc" 
-        cols="30" 
-        rows="10" 
-        placeholder="Descripcion del prducto">
-    </textarea>
+
+        <form id="form">
+
+        
+            <h1>Agregar nuevo Producto</h1>
+        
+            <input 
+                type="text" 
+                class="i"  
+                placeholder="URL de imagen"
+                data-url
+            >
+        
+            <input 
+                id="inputs" 
+                type="text"
+                class="i"  
+                placeholder="Categoria"
+                data-categoria
+            >
+        
+            <input 
+                id="inputs" 
+                type="text" 
+                class="i" 
+                placeholder="Nombre del Producto" 
+                maxlength="20"
+                data-nombre
+            >
+        
+            <input 
+                id="inputs" 
+                type="number" 
+                class="i" 
+                placeholder="Precio del Producto"
+                data-precio
+            >
+        
+            <textarea  maxlength="150 name="desc" id="desc" cols="30" rows="10" placeholder="Descripcion del prducto" class="text-a"></textarea>
+        
+            
+            <button aria-required="true" class="btn-agregar">Agregar producto</button>
+        
+        
+        </form>
+    
     </div>
+    <section class="footer">
+
+        <div class="logo">
+            <img src="/img/Logo.png" alt="">
+        </div>
+        
+        <div class="lista-info">
+            <a href="">Quienes somos</a>
+            <a href="">Politica de privacidad</a>
+            <a href="">Programa de fidelidad</a>
+            <a href="">Nuestras Tiendas</a>
+            <a href="">Quiero ser franquiciado</a>
+            <a href="">Anúncie aqui</a>
+        </div>
+        
+        
+        
+        <div class="contacto">                
+            <label for="name">Hable con nosotros</label>
+            <div class="input-nombre">
+                <p class="nombre-span">Nombre</p>
+                <input type="text" class="input" name="" id="name">
+            </div>
+            <textarea class="text-msj" placeholder="Escribe aqui" name="" id="" cols="30" rows="10"></textarea>
+            <button class="btn-form">Enviar mensaje</button>
+        </div>
+        
+        
+    </section>
+
+
+
+    <div class="desarrollado">
+
+        <h4>Desarrollado por Massimo Damiano</h4>
+        <div class=""><h4>2023</h4></div>
+    </div>
+    <script type="module" src="/client-controllers/registro.controllers.js"></script>
 </body>
 </html>

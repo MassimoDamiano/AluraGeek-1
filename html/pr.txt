@@ -1,0 +1,81 @@
+<div class="caja">
+                            <img src="../img/starwars/1.png" alt="">
+                            <h4 class="caja__titulo">Producto XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>
+                        
+                        <div class="caja">
+                            <img src="../img/starwars/2.png"  alt="">
+                            <h4 class="caja__titulo">Producto XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>
+                        
+                        <div class="caja">
+                            <img src="../img/starwars/3.png"  alt="">
+                            <h4 class="caja__titulo">Producto XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>
+                        <div class="caja">
+                            <img src="../img/starwars/4.png" alt="">
+                            <h4 class="caja__titulo">Producto XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>
+                        <div class="caja">
+                            <img src="../img/starwars/5.png" alt="">
+                            <h4 class="caja__titulo">Producto XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>
+                        <div class="caja">
+                            <img src="../img/starwars/6.png" alt="">
+                            <h4 class="caja__titulo">Producto XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>
+
+
+
+Consolas::
+
+<div class="caja">
+                            <img src="../img/consolas/1.png" alt="">
+                            <h4 class="caja__titulo">Control XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>
+                        
+                        <div class="caja">
+                            <img src="../img/consolas/2.png" alt="">
+                            <h4 class="caja__titulo">Control XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>
+                        
+                        <div class="caja">
+                            <img src="../img/consolas/3.png" alt="">
+                            <h4 class="caja__titulo">Control XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>
+                        <div class="caja">
+                            <img src="../img/consolas/4.png" alt="">
+                            <h4 class="caja__titulo">Control XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>
+                        <div class="caja">
+                            <img src="../img/consolas/5.png" alt="">
+                            <h4 class="caja__titulo">Control XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>
+                        <div class="caja">
+                            <img src="../img/consolas/6.png" alt="">
+                            <h4 class="caja__titulo">Control XYZ</h4>
+                            <p class="caja__precio"><span>$</span> 60</p>
+                            <button class="btn-productos">Ver producto</button>
+                        </div>

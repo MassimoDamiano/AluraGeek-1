@@ -1,0 +1,15 @@
+.cajas-productoss{
+    display: flex;
+    flex-wrap: wrap;
+    width: 110%;
+    margin: 20px;
+}
+.caja{
+    margin: 15px;
+}
+.header-productos {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+}
