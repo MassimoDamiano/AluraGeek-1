@@ -1,4 +1,4 @@
-import { clientServices } from "../service/client-service.js";
+/* import { clientServices } from "../service/client-service.js";
 
 const buscador = document.querySelector("#input");
 
@@ -28,4 +28,4 @@ clientServices.listaProductos().then((dataProductos) =>{
     })
 })
 
-
+ */

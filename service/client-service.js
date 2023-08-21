@@ -9,6 +9,7 @@ const listaProductosConsolas = () => fetch("http://localhost:3000/productosConso
 const listaProductosDiversos = () => fetch("http://localhost:3000/productosDiversos").then((dataDiversos) => dataDiversos.json())
 
 const listaProductos = () => fetch("http://localhost:3000/productos").then((dataProductos) => dataProductos.json())
+const listaProductos2 = () => fetch("http://localhost:3000/productos").then((dataProductos2) => dataProductos2.json())
 
 
 
@@ -18,4 +19,5 @@ const listaProductos = () => fetch("http://localhost:3000/productos").then((data
     listaProductosDiversos,
     listaProductosStar,
     listaProductos,
+    listaProductos2,
  }
