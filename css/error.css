@@ -1,0 +1,30 @@
+
+
+body{
+    font-family:sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body > img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 50%;
+    transform: scaleX(1.1);
+	animation-timing-function: ease-in-out;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgb(78, 129, 231);
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}

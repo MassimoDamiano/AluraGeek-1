@@ -96,7 +96,11 @@ form{
 
 }
 
-
+.btn-agregar:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration:0.5s 
+}
 
 /*footer*/
 .footer{

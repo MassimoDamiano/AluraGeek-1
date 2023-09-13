@@ -1,4 +1,4 @@
-const usuario = document.querySelector("#nombre")
+ const usuario = document.querySelector("#nombre")
 const contraseña = document.querySelector("#contraseña")
 const btnEntar = document.querySelector("#btn-entar")
 
@@ -14,7 +14,7 @@ function login(){
 
     }
     //alert("si quieres ingresar al modo administrador el usuario es:usuario@gmail.com y usuario123 ")
-    if(data.usuario == "usuario@gmail.com" && data.contraseña == "usuario123"){
+    if(data.usuario == "usuario@gmail.com" && data.contraseña == "papanoel"){
         location.href = "admin.html"
     }else{
         alert("usuario incorrecto")
@@ -23,3 +23,4 @@ function login(){
 
 });
 
+ 

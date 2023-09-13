@@ -1,200 +1,130 @@
 {
-  "productosStar":[
-   {
-    "url" : "/img/starwars/1.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  },
-   {
-    "url" : "/img/starwars/2.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  },
-   {
-    "url" : "/img/starwars/3.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  },
-   {
-    "url" : "/img/starwars/4.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  },
-   {
-    "url" : "/img/starwars/5.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  },
-   {
-    "url" : "/img/starwars/6.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  }
-  
-
-],
-  
-"productosConsolas":[
-  {
-    "url" : "/img/consolas/1.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/2.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/3.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/4.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/5.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/6.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  }
-],
-
-"productosDiversos":[
-  {
-    "url" : "/img/diversos/1.png",
-    "nombre": "Camisa Atari",
-    "precio": 60
-  },
-  {
-    "url" : "/img/diversos/2.png",
-    "nombre": "Camisa SNES",
-    "precio": 60
-  },
-  {
-    "url" : "/img/diversos/3.png",
-    "nombre": "Control y Consola XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/diversos/4.png",
-    "nombre": "Contol y Consola XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/5.png",
-    "nombre": "Contol y Consola XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/diversos/6.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  }
-],
-
-
-"productos": [
-  {
-    "url" : "/img/starwars/1.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  },
-   {
-    "url" : "/img/starwars/2.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  },
-   {
-    "url" : "/img/starwars/3.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  },
-   {
-    "url" : "/img/starwars/4.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  },
-   {
-    "url" : "/img/starwars/5.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  },
-   {
-    "url" : "/img/starwars/6.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  },
-  
-  
-  {
-    "url" : "/img/consolas/1.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/2.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/3.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/4.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/5.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/6.png",
-    "nombre": "Control XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/diversos/1.png",
-    "nombre": "Camisa Atari",
-    "precio": 60
-  },
-  {
-    "url" : "/img/diversos/2.png",
-    "nombre": "Camisa SNES",
-    "precio": 60
-  },
-  {
-    "url" : "/img/diversos/3.png",
-    "nombre": "Control y Consola XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/diversos/4.png",
-    "nombre": "Contol y Consola XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/consolas/5.png",
-    "nombre": "Contol y Consola XYZ",
-    "precio": 60
-  },
-  {
-    "url" : "/img/diversos/6.png",
-    "nombre": "Producto XYZ",
-    "precio": 60
-  }
-]
-
-
+  "productos": [
+    {
+      "nombre": "Producto XYZ",
+      "url": "/img/starwars/1.png",
+      "precio": "85",
+      "categoria": "star-wars",
+      "id": "8f903926-14cd-4974-94d3-77ff79bf241f"
+    },
+    {
+      "nombre": "Producto XYZ",
+      "url": "/img/starwars/2.png",
+      "precio": "85",
+      "categoria": "star-wars",
+      "id": "8f903926-14cd-4974-94d3-77ff79bf241f"
+    },
+    {
+      "nombre": "Producto XYZ",
+      "url": "/img/starwars/3.png",
+      "precio": "20",
+      "categoria": "star-wars",
+      "id": "8f903926-14cd-4974-94d3-77ff79bf241"
+    },
+    {
+      "nombre": "Producto XYZ",
+      "url": "/img/starwars/4.png",
+      "precio": "50",
+      "categoria": "star-wars",
+      "id": "8f903926-14cd-4974-94d3-77ff79bf24"
+    },
+    {
+      "nombre": "Producto XYZ",
+      "url": "/img/starwars/5.png",
+      "precio": "65",
+      "categoria": "star-wars",
+      "id": "8f903926-14cd-4974-94d3-77ff79bf2"
+    },
+    {
+      "nombre": "Producto XYZ",
+      "url": "/img/starwars/6.png",
+      "precio": "885",
+      "categoria": "star-wars",
+      "id": "8f903926-14cd-4974-94d3-77ff79bf"
+    },
+    {
+      "url": "/img/consolas/1.png",
+      "nombre": "Control XYZ",
+      "precio": 60,
+      "id": "156fsda",
+      "categoria": "consolas"
+    },
+    {
+      "url": "/img/consolas/2.png",
+      "nombre": "Control XYZ",
+      "precio": 60,
+      "id": "dw7q85sa5",
+      "categoria": "consolas"
+    },
+    {
+      "url": "/img/consolas/3.png",
+      "nombre": "Control XYZ",
+      "precio": 60,
+      "id": "65D6as5d",
+      "categoria": "consolas"
+    },
+    {
+      "url": "/img/consolas/4.png",
+      "nombre": "Control XYZ",
+      "precio": 60,
+      "id": "654ASD5C161A",
+      "categoria": "consolas"
+    },
+    {
+      "url": "/img/consolas/5.png",
+      "nombre": "Control XYZ",
+      "precio": 60,
+      "id": "654ASD5C161",
+      "categoria": "consolas"
+    },
+    {
+      "url": "/img/consolas/6.png",
+      "nombre": "Control XYZ",
+      "precio": 60,
+      "id": "654ASD5C16",
+      "categoria": "consolas"
+    },
+    {
+      "url": "/img/diversos/1.png",
+      "nombre": "Camisa Atari",
+      "precio": 60,
+      "id": "asdPOASP",
+      "categoria": "diversos"
+    },
+    {
+      "url": "/img/diversos/2.png",
+      "nombre": "Camisa SNES",
+      "precio": 60,
+      "id": "asdPOASPD",
+      "categoria": "diversos"
+    },
+    {
+      "url": "/img/diversos/3.png",
+      "nombre": "Control y Consola XYZ",
+      "precio": 60,
+      "id": "asdPOASPDJ",
+      "categoria": "diversos"
+    },
+    {
+      "url": "/img/diversos/4.png",
+      "nombre": "Contol y Consola XYZ",
+      "precio": 60,
+      "id": "asdPOASPDJI",
+      "categoria": "diversos"
+    },
+    {
+      "url": "/img/consolas/5.png",
+      "nombre": "Contol y Consola XYZ",
+      "precio": 60,
+      "id": "asdPOASPDJIP",
+      "categoria": "diversos"
+    },
+    {
+      "url": "/img/diversos/6.png",
+      "nombre": "Producto XYZ",
+      "precio": 60,
+      "id": "asdPOASPDJIP4",
+      "categoria": "diversos"
+    }
+  ]
 }

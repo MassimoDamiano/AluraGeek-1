@@ -6,10 +6,13 @@ const cajaProductos = document.querySelector("#data-p");
 const cajaProductosConsolas = document.querySelector("[data-p-c]");
 const cajaProductosDiversos = document.querySelector("[data-p-d]");
 
-const crearNuevaLinea = (url, nombre, precio) => {
+
+
+
+const crearNuevaLinea = (url, nombre, precio,id) => {
     const linea = document.createElement("div");
     const contenido = `
-        <div class="caja">
+        <div class="caja" id="caja">
             <img src="${url}" alt="${nombre}">
             <h4 class="caja__titulo">${nombre}</h4>
             <p class="caja__precio"><span>$</span>${precio}</p>
@@ -18,53 +21,74 @@ const crearNuevaLinea = (url, nombre, precio) => {
     linea.innerHTML = contenido;
     return linea;
 }
+const crearNuevaLineaAdmin = (url, nombre, precio,id) => {
+    const lineaAdmin = document.createElement("div");
+    const contenidoAdmin = `
+        <div class="caja" >
+            <img src="${url}" alt="${nombre}">
+            <h4 class="caja__titulo">${nombre}</h4>
+            <p class="caja__precio"><span>$</span>${precio}</p>
+            <div className="">
+            <a href="/html/editar.html?id=${id}"><button id="btn-editar" class="btn-e">Editar</button></a>
+            <button id="${id}" class="btn-eliminar">Eliminar</button>
+            </div>
+        </div>`
+        ;
+    lineaAdmin.innerHTML = contenidoAdmin;
+     
+    const btnEliminar = lineaAdmin.querySelector(".btn-eliminar")
+    btnEliminar.addEventListener("click", () =>{
+        const id = btnEliminar.id;
+        const categoria = clientServices.detalleCliente(id).then((producto) => console.log(producto.categoria))
+        console.log(categoria)
+        clientServices.eliminarCliente(id)
+        
+    }) 
+    
+    
+    return lineaAdmin;
+    
+}
 
-// Create an array of promises for fetching data from different categories
-const promises = [
-    clientServices.listaProductosStar(),
-    clientServices.listaProductosConsolas(),
-    clientServices.listaProductosDiversos(),
-    clientServices.listaProductos(),
-    clientServices.listaProductos2()
-];
 
-// Use Promise.all() to wait for all promises to complete
+
+
+
+
 clientServices.listaProductos().then( (dataProductos) =>{
-    dataProductos.forEach((producto) =>{
-        const nuevoProducto = crearNuevaLinea(producto.url,producto.nombre,producto.precio);        
-        cajaProductos.appendChild(nuevoProducto);
-    })
+    dataProductos.forEach((producto) =>{ 
+        if(producto.categoria === "star-wars"){
+            const nuevoProducto = crearNuevaLinea(producto.url,producto.nombre,producto.precio,producto.id);
+            cajaProductosStar.appendChild(nuevoProducto);
+        }else if(producto.categoria === "consolas"){
+            const nuevoProducto = crearNuevaLinea(producto.url,producto.nombre,producto.precio,producto.id);
+            cajaProductosConsolas.appendChild(nuevoProducto);
+        }else if(producto.categoria === "diversos"){
+            const nuevoProducto = crearNuevaLinea(producto.url,producto.nombre,producto.precio,producto.id);
+            cajaProductosDiversos.appendChild(nuevoProducto);
+        
+    }
+})
+    // Todos los productos
+    
 })
 
 clientServices.listaProductos2().then( (dataProductos2) =>{
     dataProductos2.forEach((producto) =>{
-        const nuevoProducto = crearNuevaLinea(producto.url,producto.nombre,producto.precio);        
-        cajaProductosAdmin.appendChild(nuevoProducto);
+        const nuevoProducto1 = crearNuevaLineaAdmin(producto.url,producto.nombre,producto.precio,producto.id);        
+        cajaProductosAdmin.appendChild(nuevoProducto1);
     })
 })
-Promise.all(promises)
-    .then(([dataStar, dataConsolas, dataDiversos, ]) => {
-        dataStar.forEach((producto) => {
-            const nuevoProducto = crearNuevaLinea(producto.url, producto.nombre, producto.precio);
-            cajaProductosStar.appendChild(nuevoProducto);
-        });
-
-        dataConsolas.forEach((producto) => {
-            const nuevoProducto = crearNuevaLinea(producto.url, producto.nombre, producto.precio);
-            cajaProductosConsolas.appendChild(nuevoProducto);
-        });
-
-        dataDiversos.forEach((producto) => {
-            const nuevoProducto = crearNuevaLinea(producto.url, producto.nombre, producto.precio);
-            cajaProductosDiversos.appendChild(nuevoProducto);
-        });
-
-       
+clientServices.listaProductos3().then( (dataProductos3) =>{
+    dataProductos3.forEach((producto) =>{
+        const nuevoProducto2 = crearNuevaLinea(producto.url,producto.nombre,producto.precio,producto.id);        
+        cajaProductos.appendChild(nuevoProducto2);
     })
-    .catch((error) => {
-        alert("Ocurrio un Error");
+})
+.catch((error) => {
+        console.warn("ocurrio un error")
        
-    });
+    }); 
 
 
 

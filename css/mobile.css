@@ -1,0 +1,20 @@
+@media screen and (max-width:760px) {
+    .logo2{
+        margin-bottom: 8px;
+    }
+
+  .footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+   .lista-info{
+    align-items: center;
+   }
+   .contacto{
+    margin-top: 20px;
+    width: 100%;
+   }
+}

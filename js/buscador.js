@@ -1,31 +1,32 @@
-/* import { clientServices } from "../service/client-service.js";
-
-const buscador = document.querySelector("#input");
-
-function getProductosFiltrados(listaProductos, inputNombreProducto) {
-    return listaProductos.filter(producto => {
-      return producto.nombre.includes(inputNombreProducto);
-    });
-  }
+import { clientServices } from "../service/client-service.js";
 
 
-clientServices.listaProductos().then((dataProductos) =>{
-    dataProductos.forEach((producto)=>{
-        const productos = producto.nombre
-    
-    buscador.addEventListener("keyup", (e) => {
-    
-        if( e.target.matches("#input")){
-            productos.forEach((producto) =>{
-                console.log(producto)
-            })
-        } 
-        
-         
-     
-     
-     });
-    })
-})
+  const buscador = document.getElementById("buscador")
 
- */
+
+  clientServices.listaProductos3().then((dataProductos3) =>{
+    console.log(dataProductos3)
+    let body = ``
+    for(let i =0; i < dataProductos3.length; i++){
+      body += `<div class="caja" id="caja">
+      <img src="${url}" alt="${nombre}">
+      <h4 class="caja__titulo">${nombre}</h4>
+      <p class="caja__precio"><span>$</span>${precio}</p>
+      <button class="btn-productos">Ver producto</button>
+  </div>`
+  document.querySelector(".section-productos").innerHTML = body
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  })
