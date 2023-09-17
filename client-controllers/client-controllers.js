@@ -5,8 +5,7 @@ const cajaProductos = document.querySelector("#data-p");
 const cajaProductosConsolas = document.querySelector("[data-p-c]");
 const cajaProductosDiversos = document.querySelector("[data-p-d]");
 
-alert("hola")
-console.log("ss")
+
 
 
 const crearNuevaLinea = (url, nombre, precio) => {

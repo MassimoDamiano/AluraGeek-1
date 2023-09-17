@@ -2,7 +2,7 @@ import { clientServices } from "../service/client-service.js";
 
 
   const buscador = document.getElementById("buscador")
-alert("dd")
+
 
   clientServices.listaProductos3().then((dataProductos3) =>{
     console.log(dataProductos3)
