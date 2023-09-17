@@ -1,15 +1,15 @@
 //Este archivo se comunica con el servidor, recibe la respuesta 
 //y despues la genera en un json
 //FETCH API 
-const listaProductos = () => fetch("http://localhost:3000/productos").then((dataProductos) => dataProductos.json())
+const listaProductos = () => fetch("https://fake-apii.vercel.app/productos").then((dataProductos) => dataProductos.json())
 
-const listaProductos2 = () => fetch("http://localhost:3000/productos").then((dataProductos2) => dataProductos2.json())
-const listaProductos3 = () => fetch("http://localhost:3000/productos").then((dataProductos3) => dataProductos3.json())
+const listaProductos2 = () => fetch("https://fake-apii.vercel.app/productos").then((dataProductos2) => dataProductos2.json())
+const listaProductos3 = () => fetch("https://fake-apii.vercel.app/productos").then((dataProductos3) => dataProductos3.json())
 
 
 
 const crearProducto = (url,nombre,precio,categoria) =>{
-   return fetch("http://localhost:3000/productos",{
+   return fetch("https://fake-apii.vercel.app/productos",{
    method: "POST",
    headers: {
       "Content-Type": "application/json"
@@ -66,7 +66,7 @@ if(respuesta.ok){
 
  const eliminarCliente = (id) => {
    
-   return fetch(`http://localhost:3000/productos/${id}`, {
+   return fetch(`https://fake-apii.vercel.app/productos/${id}`, {
       method: "DELETE",
    })
    /* .then((respuesta) =>{
@@ -75,13 +75,13 @@ if(respuesta.ok){
 } 
 
 const detalleCliente = (id) =>{
-   return fetch(`http://localhost:3000/productos/${id}`).then((respuesta) => 
+   return fetch(`https://fake-apii.vercel.app/productos/${id}`).then((respuesta) => 
    respuesta.json()
    );
 }
 
 const actualizarCliente = (nombre,url,precio,id) => {
-   return fetch(`http://localhost:3000/productos/${id}`,{
+   return fetch(`https://fake-apii.vercel.app/productos/${id}`,{
    method:"PUT",
    headers:{
       "Content-Type": "application/json"

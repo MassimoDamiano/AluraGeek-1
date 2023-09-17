@@ -1,5 +1,4 @@
 import { clientServices } from "../service/client-service.js";
-
 const cajaProductosAdmin = document.querySelector("[data-productos-admin]");
 const cajaProductosStar = document.querySelector("[data-p-s]");
 const cajaProductos = document.querySelector("#data-p");
@@ -7,9 +6,10 @@ const cajaProductosConsolas = document.querySelector("[data-p-c]");
 const cajaProductosDiversos = document.querySelector("[data-p-d]");
 
 alert("hola")
+console.log("ss")
 
 
-const crearNuevaLinea = (url, nombre, precio,id) => {
+const crearNuevaLinea = (url, nombre, precio) => {
     const linea = document.createElement("div");
     const contenido = `
         <div class="caja" id="caja">
